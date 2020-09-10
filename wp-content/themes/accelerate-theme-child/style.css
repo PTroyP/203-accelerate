@@ -119,3 +119,27 @@ div.case-study-images img {
   text-align: center;
   margin: 1em 0 .5em;
 }
+
+.social-media-navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-item i._mi {
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5;
+  text-align: center;
+}
+.social-media-navigation li {
+
+padding-left: 10px;
+}
+
+.social-media-navigation i {
+  color: #ffffff;
+  background: #3b3b3b;
+  border-radius: 50%;
+}
