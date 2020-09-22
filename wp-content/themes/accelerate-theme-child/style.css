@@ -143,3 +143,126 @@ padding-left: 10px;
   background: #3b3b3b;
   border-radius: 50%;
 }
+
+/*Contact Us*/
+
+.site-content {
+  width:50%;
+}
+
+div .main-content {
+  padding: 0;
+}
+
+div .main-content h2 {
+  font-size: 1.5em;
+  line-height: 2.19em;
+  margin: 1.5em 0 0em;
+}
+
+div .main-content p {
+  font-size: 1.03em;
+  line-height: 1.7em;
+  color: #818181;
+}
+
+div .nf-form-fields-required {
+  visibility: hidden;
+}
+
+.nf-error-msg, .ninja-forms-req-symbol {
+  visibility: hidden;
+}
+
+#nf-field-1-container, #nf-field-2-container {
+  display:inline-block;
+  width:48%;
+}
+
+#nf-field-2-container {
+  margin-left: 20px;
+  float:right;
+}
+
+div .nf-form-content label {
+  font-size: .875em;
+}
+
+div .nf-field-label label {
+  font-weight: 600;
+}
+
+div .nf-form-content input[type=button] {
+  background: #45ac9d;
+  width:200px;
+  float:right;
+}
+
+div .nf-form-content .ninja-forms-field {
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+/*About Page*/
+
+.about-page {
+  background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+  margin: 0 0 3em;
+  height:31em;
+}
+
+.about-page .main-content h2 {
+  margin-top: 0;
+}
+.about-page .main-content p {
+  font-size: 1.56em;
+  color: #ffffff;
+  line-height: 1.4em;
+  text-align: center;
+  width: 50%;
+  margin:auto;
+}
+
+
+element.style {
+}
+.about-page .main-content p {
+    font-size: 1.56em;
+    color: #ffffff;
+    line-height: 1.4em;
+    text-align: center;
+    width: 58%;
+    margin: auto;
+    padding-top: 135px;
+}
+
+.services {
+  max-width: 1200px;
+  margin:0 9.38em;
+}
+
+.services .intro h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services .intro p {
+  text-align: center;
+  padding-top:0;
+  line-height: 1.697em;
+  margin-top: 0;
+}
+
+div .service-block {
+  overflow: auto;
+}
+
+.service-block figure {
+  width: 320px;
+  float:left;
+}
+
+.service-block .service-text {
+  width: 620px;
+  float: left;
+}
