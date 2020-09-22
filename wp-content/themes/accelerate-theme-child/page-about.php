@@ -36,14 +36,19 @@ get_header(); ?>
 					$size = "full";
 					?>
 
+					<div class="individual-service">
+
 						<figure>
 							<?php echo wp_get_attachment_image( $icon, $size ); ?>
 						</figure>
 
-					<div class="service-text">
-							<h2><?php echo $service; ?></h2>
-							<p><?php echo $descriptor; ?></p>
+						<div class="service-text">
+								<h2><?php echo $service; ?></h2>
+								<p><?php echo $descriptor; ?></p>
+						</div>
+
 					</div>
+
 				<?php endwhile; // end of the loop. ?>
 			</div>
 
