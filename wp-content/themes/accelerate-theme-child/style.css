@@ -247,7 +247,7 @@ element.style {
 
 .services {
 
-  margin:0 9.38em;
+  margin:0 6em;
 }
 
 .services .intro h4 {
@@ -263,27 +263,103 @@ element.style {
 }
 
 div .service-block {
-  overflow: auto;
+
 }
 
 div .individual-service {
-  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
 }
 
-.individual-service:nth-child(even) figure {
-  float:right;
+.individual-service:nth-child(even){
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+
 }
 
 .service-block figure {
-  width: 280px;
-  float:left;
+  width: 220px;
 }
 
 .service-block .service-text {
-  width: 580px;
-  float: left;
+  width: 605px;
 }
 
 .service-block .service-text h2 {
   margin:0;
+}
+
+.about-contact {
+  height: 8em;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #bfbfbf;
+  padding: 0 6em;
+}
+
+.about-contact h2 {
+  margin:0;
+}
+
+a .button {
+  height: 55px;
+  width: 240px;
+  padding:0;
+  background: #45ac9d;
+  color:#ffffff;
+  font-size: 1.18em;
+  text-align: center;
+}
+#main {
+  margin-bottom: 0;
+}
+
+/* 404 page */
+
+.page-404 {
+  background: url("img/man-n-desert.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+  margin: 0 0 3em;
+  height:31em;
+
+}
+
+.crazy {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.crazy-search h1{
+  width:650px;
+  line-height: 1.2em;
+  text-align: center;
+  padding-bottom: 180px;
+}
+
+.crazy-find h1 {
+  width:650px;
+  line-height: 1em;
+  text-align: center;
+  margin:auto;
+}
+
+.search-404 {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+div .search-404 .button{
+  text-align: center;
 }

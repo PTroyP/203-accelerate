@@ -55,4 +55,9 @@ get_header(); ?>
 		</div><!-- .main-content -->
 </section>
 
+<div class="about-contact">
+	<h2>Interested in working with us?</h2>
+	<a class="button" href="#">Contact Us</a>
+</div>
+
 <?php get_footer(); ?>
