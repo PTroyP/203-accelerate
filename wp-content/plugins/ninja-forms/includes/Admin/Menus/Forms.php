@@ -24,7 +24,7 @@ final class NF_Admin_Menus_Forms extends NF_Abstracts_Menu
             add_action( 'current_screen', array( 'NF_Admin_AllFormsTable', 'process_bulk_action' ) );
         }
 
-        add_action( 'admin_body_class', array( $this, 'body_class' ) );
+        add_action( 'admin_body_class', array( $this, 'body_class' ), 999999999 );
         add_action( 'admin_init', array( $this, 'nf_upgrade_redirect' ) );
     }
 
@@ -630,6 +630,7 @@ final class NF_Admin_Menus_Forms extends NF_Abstracts_Menu
 
             if( ! isset( $action[ 'name' ] ) || ! $action[ 'name' ] ) continue;
 
+            $group = ( isset( $action['group'] ) ) ? $action['group'] : '';
             $name = $action[ 'name' ];
             $nicename = ( isset( $action[ 'nicename' ] ) ) ? $action[ 'nicename' ] : '';
             $image = ( isset( $action[ 'image' ] ) ) ? $action[ 'image' ] : '';
@@ -647,6 +648,7 @@ final class NF_Admin_Menus_Forms extends NF_Abstracts_Menu
 
             $action_type_settings[ $name ] = array(
                 'id' => $name,
+                'group' => $group,
                 'section' => 'available',
                 'nicename' => $nicename,
                 'image' => $image,
@@ -655,6 +657,14 @@ final class NF_Admin_Menus_Forms extends NF_Abstracts_Menu
                 'settingGroups' => array(),
                 'settingDefaults' => array()
             );
+        }
+
+        /**
+         * Remove some action types if Builder Dev Mode is not enabled.
+         */
+        if( 1 != Ninja_Forms()->get_setting('builder_dev_mode') ) {
+            /** Remove the WP Hook (custom) action. */
+            unset( $action_type_settings[ 'custom' ] );
         }
 
         $action_type_settings = apply_filters( 'ninja_forms_action_type_settings', $action_type_settings );

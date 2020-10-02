@@ -25,7 +25,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 	<section class="featured-work">
-		<div class="site-content">
+		<div class="fw-site-content">
 				<h2>Featured Work</h2>
 				<ul class="homepage-featured-work">
 
@@ -50,7 +50,7 @@ get_header(); ?>
 	</section>
 
 	<section class="recent-posts">
-		<div class="site-content">
+		<div class="rp-site-content">
 			<div class="blog-post">
 				<h4>From the Blog</h4>
 					<?php query_posts('posts_per_page=1'); ?>
@@ -62,6 +62,15 @@ get_header(); ?>
 					<?php wp_reset_query(); ?>
 
 			</div>
+
+			<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+				<div id="secondary" class="widget-area" role="complementary">
+					<h3>Recent Tweet</h3>
+					<?php dynamic_sidebar( 'sidebar-2' ); ?>
+					<div class="follow">
+						<h3>Follow Us ›</h3>
+				</div>
+			<?php endif; ?>
 
 		</div>
 	</section>

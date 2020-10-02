@@ -23,8 +23,21 @@ Text Domain:  accelerate-theme-child
 	background: #45ac9d;
 }
 
+.featured-work .fw-site-content {
+  max-width: 78%;
+  margin:auto;
+}
+
+.recent-posts .rp-site-content {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  max-width: 78%;
+  margin:auto;
+}
+
 .blog-post {
-  width: 50%;
+  width: 45.7%;
   float:left;
   margin-bottom: 2em;
 }
@@ -47,9 +60,105 @@ Text Domain:  accelerate-theme-child
   text-transform: uppercase;
 }
 
+
+.rp-site-content .widget-area {
+  width: 43.6%;
+  float:left;
+  margin-bottom: 2em;
+}
+
+.rp-site-content .widget-area h3 {
+  font-size: 1em;
+  color:#a6a6a6;
+  text-transform: uppercase;
+}
+
+.rp-site-content .widget-area aside h3 {
+  font-size: 1.5em;
+  color:#3b3b3b;
+  text-transform: none;
+}
+
+.rp-site-content .widget-area aside ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.rp-site-content .widget-area .follow h3 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  color: #45ac9d;
+  text-transform: uppercase;
+}
+
 .view-color {
   color:#45ac9d;
   text-transform: uppercase;
+}
+
+/* Blog page */
+
+.index-page .site-content {
+  width: 78%
+}
+
+.single-page .site-content {
+  width: 78%;
+}
+
+#sidebar h2 {
+  text-align: center;
+  font-size: 1em;
+}
+
+.widget.widget_mc4wp_form_widget {
+  position:relative;
+  border-bottom: 1px solid #a6a6a6;
+}
+
+.widget.widget_search input {
+  color:#a6a6a6;
+}
+
+#sidebar .widget.widget_categories h2 {
+  text-align: left;
+  font-size: .875em;
+  font-weight: normal;
+  text-transform: none;
+}
+
+#sidebar .widget.widget_archive h2{
+  text-align: left;
+  font-size: .875em;
+  font-weight: normal;
+  text-transform: none;
+}
+
+#sidebar .widget.widget_media_gallery h2 {
+  text-align:left;
+  font-size: .875em;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.mc4wp-form-fields p label input {
+  height:auto;
+  width:193px;
+  text-align: center;
+  background: #ffffff;
+  padding: 0;
+}
+
+.mc4wp-form-fields p input {
+  height:auto;
+  width:193px;
+  text-align: center;
+  background: #45ac9d;
+  padding: 1em 3em;
+}
+
+#sidebar .widget.widget_media_gallery {
+  padding-right: 0;
 }
 
 /* Archive Case Studies*/
@@ -153,6 +262,7 @@ padding-left: 10px;
   border-radius: 50%;
 }
 
+
 /*Contact Us*/
 
 .site-content {
@@ -216,33 +326,24 @@ element.style {
 .about-page {
   background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
   margin: 0 0 3em;
-  height:31em;
+  height: 17em;
 }
 
 .about-page .main-content {
   max-width: 1200px;
+  padding-top: 0px;
 }
 .about-page .main-content h2 {
   margin-top: 0;
 }
 .about-page .main-content p {
-  font-size: 1.56em;
+  font-size: 1.47em;
   color: #ffffff;
   line-height: 1.4em;
   text-align: center;
-  width: 50%;
+  width: 58%;
   margin:auto;
-}
-
-
-.about-page .main-content p {
-    font-size: 1.56em;
-    color: #ffffff;
-    line-height: 1.4em;
-    text-align: center;
-    width: 58%;
-    margin: auto;
-    padding-top: 135px;
+  padding-top: 60px;
 }
 
 .services {
@@ -293,6 +394,7 @@ div .individual-service {
 
 .service-block .service-text h2 {
   margin:0;
+  font-weight: normal;
 }
 
 .about-contact {
@@ -310,6 +412,7 @@ div .individual-service {
 
 .about-contact h2 {
   margin:0;
+  font-weight: normal;
 }
 
 a .button {
@@ -341,16 +444,22 @@ a .button {
   align-items: center;
 }
 .crazy-search h1{
+  font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, cursive;
   width:650px;
   line-height: 1.2em;
   text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #3b3b3b;
   padding-bottom: 180px;
 }
 
 .crazy-find h1 {
+  font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, cursive;
   width:650px;
   line-height: 1em;
   text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #3b3b3b;
   margin:auto;
 }
 
@@ -359,7 +468,12 @@ a .button {
   flex-direction: row;
   justify-content: center;
   margin-top: 20px;
+  border: 1px #3b3b3b;
 }
-div .search-404 .button{
+
+.search-404 a {
+  text-shadow: 1px 1px #3b3b3b;
+}
+.search-404 .button{
   text-align: center;
 }

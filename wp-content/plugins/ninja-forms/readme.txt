@@ -3,7 +3,7 @@ Contributors: wpninjasllc, kstover, jameslaws, kbjohnson90, klhall1987, krmoorho
 Tags: forms, contact form, email form, form builder, custom form, pdf form, registration form, payment form, login form, contact me, signature form, upload form, file upload form, conditional form, feedback form, appointment form, quote form, survey form, contact button, signup form, form plugin, contact form plugin, subscription form, email subscription form, newsletter form, donation form, booking form, quote request form, multi page form, conditional logic form, subscription form, application form, employment verification form, star rating form, rating form, event form, mailchimp form, campaign monitor form, constant contact form, mailpoet form, aweber form, cleverreach form, emma form, convertkit form, active campaign form, salesforce form, zoho form, capsule form, insightly form, pipelinedeals form, onepagecrm form
 Requires at least: 5.3
 Tested up to: 5.5
-Stable tag: 3.4.27
+Stable tag: 3.4.30
 License: GPLv2 or later
 
 The 100% beginner friendly WordPress form builder. Drag & drop form fields to build beautiful, professional contact forms in minutes.
@@ -303,13 +303,59 @@ This section describes how to install the plugin and get it working.
 
 == Upgrade Notice ==
 
-= 3.4.27 (9 September 2020) =
+= 3.4.30 (22 September 2020) =
 
 *Bugs:*
 
-* Resolved an issue that sometimes caused the merge tag menu to not open properly in the form builder.
+* Resolved an issue that was causing a fatal error on sites running PHP 5.6 or older.
 
 == Changelog ==
+
+= 3.4.30 (22 September 2020) =
+
+*Bugs:*
+
+* Resolved an issue that was causing a fatal error on sites running PHP 5.6 or older.
+
+= 3.4.29 (18 September 2020) =
+
+*Bugs:*
+
+* Added missing dependency for our blocks.
+
+= 3.4.28 (18 September 2020) =
+
+*Changes:*
+
+* The Views Table Block has arrived!
+* Updated the Ninja Forms Block to be more in-line with current Gutenberg conventions.
+* Improved the efficiency of submission limit checks.
+* The SendWP service can now be linked to the Ninja Forms dashboard.
+* Apps & Integrations are now grouped by category for easier sorting.
+* Updated color contrast of the form builder to be WCAG compliant.
+* Custom Action now requires developer mode to be enabled.
+* Updated the File Upload form template.
+
+*Bugs:*
+
+* Corrected improperly named filter for save action settings.
+* Cleaned up some improperly escaped code on our get help page.
+* Updated graphics associated with our add-ons to make them display properly.
+* Corrected an issue that was causing the password field on our settings page to not properly save values.
+* Increased the priority of our form builder class to ensure it properly loads over other elements on the page.
+* Field duplication no longer improperly updates the target of calculations.
+* Corrected the order of our submenu items.
+
+*Security:*
+
+* Added escaping for HTML content of fields in the submissions table.
+
+= 3.4.27.1 (17 September 2020) =
+
+*Security:*
+
+* Patched a CSRF vulnerability in our services integration [reported responsibly](https://ninjaforms.com/security) by Slavco Mihajloski.
+* Patched a validation bypass vulnerability in our email field.
 
 = 3.4.27 (9 September 2020) =
 
