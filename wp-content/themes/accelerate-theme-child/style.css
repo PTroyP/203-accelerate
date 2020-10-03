@@ -163,6 +163,11 @@ Text Domain:  accelerate-theme-child
 
 /* Archive Case Studies*/
 
+.single-case-site-content {
+  width:960px;
+  margin:auto;
+}
+
 .case-study-content {
   padding:60px 150px 0 150px;
 }
@@ -207,7 +212,7 @@ div.case-study-images img {
 
 .case-study-images {
   width:50%;
-  float:left;
+  float:right;
   overflow: auto;
   margin-bottom: 4.1em;
 }
