@@ -33,7 +33,7 @@ get_header(); ?>
 </div>
 
 <div class="search-404">
-  <a class="button" href="/accelerate">Try our Homepage!</a>
+  <a class="button" href="/accelerate/home">Try our Homepage!</a>
 </div>
 
 	</div><!-- #primary -->
